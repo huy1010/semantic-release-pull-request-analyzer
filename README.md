@@ -40,6 +40,8 @@ This plugin supports the following GitHub merge strategies:
 - **Merge commit**: Commits with title `Merge pull request #123 from ...`
 - **Squash and merge**: Commits with title ending in `(#123)` (GitHub's default squash merge format)
 
+**Note**: Custom merge commit titles are not supported. The plugin relies on GitHub's default merge commit formats to extract PR numbers. If you modify the merge commit title when merging, the plugin will not be able to associate the commit with a pull request.
+
 ## Configuration
 
 Make sure there is a valid `GITHUB_TOKEN` that has at least `contents: read` rights.
