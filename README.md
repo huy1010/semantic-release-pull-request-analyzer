@@ -33,7 +33,12 @@ With this example:
 - merged pull requests with label `documentation` will result in a `patch` release.
 - merged pull requests with label `bug` will result in a `patch` release.
 
-Note that this plugin will only associate pull requests with the merge-commit title `Merged pull request #XXX from`. This is the default merge-commit title that GitHub uses for non-squash, non-rebase merges.
+### Supported merge strategies
+
+This plugin supports the following GitHub merge strategies:
+
+- **Merge commit**: Commits with title `Merge pull request #123 from ...`
+- **Squash and merge**: Commits with title ending in `(#123)` (GitHub's default squash merge format)
 
 ## Configuration
 
